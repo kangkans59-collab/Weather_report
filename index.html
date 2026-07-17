@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <h1>Weather Forcast</h1>
+    <input type="text" id="placeInfo" placeholder="Enter a place name...">
+    <button id="submitButton">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        VIEW</button>
+    <div id="weatherApp">
+        <img src="cloud_emoji.png" id="cloud_img">
+        <div id="temperature"></div>
+        <div id="weatherInfo">
+            <pre><i class="fa-solid fa-temperature-empty" id="thermometer"></i>      Feels Like<div class="result" id="relTempRes"></div></pre>
+            <pre><i class="fa-solid fa-droplet" id="humidity"></i>     Humidity<div class="result" id="humRes"></div></pre>
+            <pre><i class="fa-solid fa-wind" id="windSpeed"></i>    Wind Speed<div class="result" id="windRes"></div></pre>
+            <pre><i class="fa-solid fa-gauge-simple-high" id="pressure"></i>    Pressure<div class="result" id="presRes"></div></pre>
+            <pre><i class="fa-solid fa-eye" id="visibility"></i>    Visibility<div class="result" id="visRes"></div></pre>
+        </div>
+        <h3 id="error"></h3>
+        <div id="rainfall"></div>
+    </div>
+   
+    <script src="backend.js"></script>
+</body>
+</html>
